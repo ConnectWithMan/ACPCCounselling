@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -503,6 +505,9 @@
             box-shadow: var(--shadow-md);
             background: var(--bg-white);
             border: 1px solid var(--border-light);
+            /* Soft scrollbar for table */
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary-color) var(--bg-light);
         }
 
         table {
@@ -515,11 +520,12 @@
 
         th,
         td {
-            padding: 1.2rem 1.5rem;
+            padding: 1.25rem 1.5rem;
             border: none;
             border-bottom: 1px solid var(--border-light);
             text-align: left;
             vertical-align: middle;
+            line-height: 1.5;
         }
 
         tr:last-child td {
@@ -527,17 +533,28 @@
         }
 
         th {
-            background: #F1F5F9;
-            color: var(--text-dark);
+            background: linear-gradient(135deg, #F8FAFC 0%, #EEF2FF 100%);
+            color: var(--primary-color);
             font-weight: 600;
             text-transform: uppercase;
             font-size: 0.85rem;
             letter-spacing: 1px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        tr:nth-child(even) td {
+            background-color: #F8FAFC;
         }
 
         tr:hover td {
-            background-color: #F8FAFC;
+            background-color: #EEF2FF;
             transition: background-color 0.2s ease-in-out;
+        }
+
+        td:last-child {
+            font-weight: 600;
+            color: var(--text-dark);
+            min-width: 150px;
         }
 
         .section ul {
@@ -1018,7 +1035,6 @@
                     <h1>ACPC B.Tech Schedule 2026</h1>
                     <h2>Important Dates for Gujarat Engineering Admissions</h2>
                     <h4>Stay updated with the official ACPC timeline for registration, merit list declaration, mock rounds, and seat allotment.</h4>
-                    <a href="#schedule" class="btn" style="margin-top: 15px;">View Complete Schedule</a>
                 </div>
                 <div class="hero-img">
                     <img src="https://acpccounselling.in/acpc-schedule.webp" alt="ACPC B.Tech Schedule 2026"
@@ -1028,11 +1044,168 @@
         </div>
     </section>
 
-    <!-- OVERVIEW -->
+
+
+             <section class="section" aria-labelledby="schedule-table">
+                <div class="container">
+                <h2 class="section-title">Official Timetable 2026-27</h2>
+                <div class="table-responsive">
+                    <table>
+                        <caption id="schedule-table" style="display:none;">Detailed timetable of ACPC B.Tech Admission
+                            phases and corresponding dates for the academic year 2026-27</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Admission Activity</th>
+                                <th scope="col">Date (2026-27)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Awareness Program for UG courses</td>
+                                <td>11.04.2026 to 07.06.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Last date of Registration for admission and payment of online registration fees</td>
+                                <td>31.05.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Declaration of provisional merit list</td>
+                                <td>12.06.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Publication of revised final list of Institutes and Seat Matrix</td>
+                                <td>12.06.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Filling & alteration of choices by the candidates for mock round admission</td>
+                                <td>12.06.2026 to 15.06.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Declaration of result of Mock Round</td>
+                                <td>17.06.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Declaration of Final Merit List</td>
+                                <td>17.06.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Consent for participation, filling & alteration of choices by the candidates for
+                                    actual admission: Round-1</td>
+                                <td>17.06.2026 to 22.06.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Declaration of first round of allotment list</td>
+                                <td>25.06.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Online payment of token tuition fees and generation of Admission Letter</td>
+                                <td>25.06.2026 to 30.06.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Commencement of Academic Term</td>
+                                <td>01.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Online cancellation of admission: Round-1</td>
+                                <td>26.06.2026 to 02.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Display of vacancy after Round – 1</td>
+                                <td>03.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Online registration for non-registered candidates on available seats</td>
+                                <td>01.07.2026 to 05.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Publication of Revised Merit List after improvement of result</td>
+                                <td>10.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Consent for participation, filling & alteration of choices by the candidates for
+                                    actual admission: Round-2</td>
+                                <td>10.07.2026 to 13.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Declaration of second round of allotment list</td>
+                                <td>15.07.2026 (2PM)</td>
+                            </tr>
+                            <tr>
+                                <td>Online payment of token tuition fees and generation of Admission Letter</td>
+                                <td>15.07.2026 to 19.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Online withdrawal of admission allocated in Round-2</td>
+                                <td>15.07.2026 to 19.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Display of final vacancy for Round-2</td>
+                                <td>20.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Consent for participation, Filling & alteration of choices by the candidates for
+                                    Round-3</td>
+                                <td>20.07.2026 to 23.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Declaration of third round of allotment list</td>
+                                <td>25.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Online payment of token tuition fees and generation of Admission Letter</td>
+                                <td>25.07.2026 to 27.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Online cancellation of admission</td>
+                                <td>25.07.2026 to 27.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Display of vacancy after Round – 3</td>
+                                <td>28.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Last date of reporting at institute level and payment of remaining fees</td>
+                                <td>28.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Consent for participation, filling & alteration of choices by the candidates for
+                                    Online round for Govt and GIA institutes</td>
+                                <td>28.07.2026 to 30.07.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Declaration of allotment for Online round for Govt and GIA institutes</td>
+                                <td>01.08.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Online payment of token tuition fees and generation of Admission Letter</td>
+                                <td>01.08.2026 to 04.08.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Registration of vacant Seat registration for Govt / GIA institute (non-allotment)
+                                    (tentative)</td>
+                                <td>05.08.2026 to 07.08.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Publication of merit for admissions to vacant seats of Govt / GIA institute
+                                    (non-allotment) (tentative)</td>
+                                <td>10.08.2026</td>
+                            </tr>
+                            <tr>
+                                <td>Counselling for admissions to vacant seats of Govt / GIA institute (non-allotment)
+                                    (tentative)</td>
+                                <td>12.08.2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+            </section>
+
+                <!-- OVERVIEW -->
     <section class="section">
         <div class="container">
             <h2 class="section-title">Admission Phases</h2>
-            <p>The ACPC B.Tech admission process is systematically divided into several phases to ensure a fair and transparent seat allocation for all candidates. Being aware of the schedule helps candidates complete crucial steps on time without missing any deadlines.</p>
+            <p>The ACPC B.Tech admission process is systematically divided into several phases to ensure a fair and transparent <a href="/acpc-seat-allotment" title="ACPC Seat Allotment Process">seat allocation</a> for all candidates. Being aware of the schedule helps candidates complete crucial steps on time without missing any deadlines.</p>
             <p>The primary phases of the ACPC counselling process include:</p>
             <ul>
                 <li><b>Online Registration & Document Upload:</b> Candidates register on the portal and submit the necessary documents for verification.</li>
@@ -1042,99 +1215,14 @@
             </ul>
         </div>
     </section>
-
-    <!-- SCHEDULE TABLE SECTION -->
-    <section id="schedule" class="section" style="background: var(--bg-light);">
-        <div class="container">
-            <h2 class="section-title">Expected Important Dates 2026</h2>
-            <p>Below is the indicative schedule for the ACPC B.Tech counselling process. Please note that these dates are tentative and based on previous years' trends. The official dates will be updated here once announced by the Admission Committee.</p>
-            <div class="table-responsive">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Event / Activity</th>
-                            <th>Expected Date (2026)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Start of Online Registration & PIN Distribution</td>
-                            <td>1st Week of May 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Last Date for Online Registration & Document Upload</td>
-                            <td>1st Week of June 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Declaration of Provisional Merit List</td>
-                            <td>2nd Week of June 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Choice Filling for Mock Round</td>
-                            <td>2nd to 3rd Week of June 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Declaration of Mock Round Result</td>
-                            <td>Last Week of June 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Declaration of Final Merit List</td>
-                            <td>Last Week of June 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Choice Filling for Actual Round 1</td>
-                            <td>Last Week of June to 1st Week of July 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Seat Allotment Result (Round 1)</td>
-                            <td>2nd Week of July 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Online Deposition of Token Tuition Fee & Generation of Admission Letter</td>
-                            <td>2nd Week of July 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Commencement of Academic Term</td>
-                            <td>3rd Week of July 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Consent for Reshuffling and Choice Filling for Actual Round 2</td>
-                            <td>3rd Week of July 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Seat Allotment Result (Round 2)</td>
-                            <td>Last Week of July 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Online Deposition of Token Tuition Fee & Generation of Admission Letter (Round 2)</td>
-                            <td>Last Week of July 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Online Cancellation of Admission (Round 1 & 2)</td>
-                            <td>1st Week of August 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Display of Vacant Seats after Round 2</td>
-                            <td>1st Week of August 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Management/Vacant Quota Admission Process at Institute Level</td>
-                            <td>August 2026</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="important-notice" style="font-size: 1rem; margin-top: 15px;">* Important: Regularly check the official gujacpc.admissions.nic.in portal for official updates and notifications.</p>
-        </div>
-    </section>
-
+    
     <!-- KEY INSTRUCTIONS -->
     <section class="section">
         <div class="container">
             <h2 class="section-title">Key Instructions for Candidates</h2>
             
             <h3 class="subsection-title-purple">Document Readiness</h3>
-            <p>Ensure that all required documents such as Marksheets, Caste Certificates (if applicable), Income Certificates, and EWS Certificates are valid and ready before the registration phase begins. Invalid documents can lead to the cancellation of registration.</p>
+            <p>Ensure that all <a href="/acpc-documents" title="ACPC Documents Required">required documents</a> such as Marksheets, Caste Certificates (if applicable), Income Certificates, and EWS Certificates are valid and ready before the registration phase begins. Invalid documents can lead to the cancellation of registration.</p>
             
             <h3 class="subsection-title-blue">Adherence to Deadlines</h3>
             <p>The ACPC software strictly locks functionalities after the deadline passes. For instance, if you do not lock your choices before the end date of choice filling, the system will auto-lock your last saved choices. Therefore, it is highly recommended not to wait for the last minute.</p>
